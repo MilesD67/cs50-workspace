@@ -14,7 +14,7 @@ def draw_circle_and_square(canvas):
     middle, with no gap and no overlap. Run this once first and look
     at how far the circle pokes out past the square's edges.
     """
-    canvas.set_pen_color(canvas.BLUE)
+    canvas.set_pen_color(canvas.RED)
     canvas.rectangle(250, 250, 300, 300)
 
     canvas.set_pen_color(canvas.RED)
