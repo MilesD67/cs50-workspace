@@ -23,7 +23,7 @@ def draw_circle_border(canvas):
     # Top and bottom borders
     for i in range(11):
         top_bottom_x = i * 50 # This is a variable!
-        canvas.filled_circle(top_bottom_x, 50, 25)
+        canvas.filled_circle(top_bottom_x, 50, 25, )
         canvas.filled_circle(top_bottom_x, 200, 25)
 
     # TODO: write a loop that draws circles down the left and right
