@@ -17,7 +17,7 @@ def draw_circle_and_square(canvas):
     canvas.set_pen_color(canvas.RED)
     canvas.rectangle(250, 250, 300, 300)
 
-    canvas.set_pen_color(canvas.RED)
+    canvas.set_pen_color(canvas.BLUE)
     # BUG: This circle's numbers (aka arguments) are all wrong!
     # Change the arguments so the circle neatly fills the square
     canvas.circle(100, 100, 100)
