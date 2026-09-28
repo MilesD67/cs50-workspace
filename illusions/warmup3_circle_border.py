@@ -30,8 +30,8 @@ def draw_circle_border(canvas):
     # edges, spaced the same way as the top/bottom loop above.
     for i in range(11):
         top_bottom_y = i * 50
-        canvas.filled_circle(top_bottom_y, 100, 25)
-        canvas.filled_circle(top_bottom_y, 300,25)
+        canvas.filled_circle(500,top_bottom_y,25)
+        canvas.filled_circle(0,top_bottom_y,25)
 
 
 def main():
