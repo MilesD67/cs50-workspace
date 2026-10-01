@@ -22,7 +22,7 @@ def draw_piano_pattern(canvas):
         canvas.rectangle(key_x, 250, 60, 350) # Don't change this line either
 
         # TODO: add a filled black rectangle for the black key here
-        canvas.filled_rectangle(key_x +30, 175, 35, 200)
+        canvas.circle(500, 500, key_x)
 
 
     # Draws the extra white key at the end. Leave this alone!
