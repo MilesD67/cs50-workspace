@@ -12,7 +12,7 @@ import canvas2d
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
-    pass
+    canvas.circle(200, 200, 100)
 
 
 def main():
