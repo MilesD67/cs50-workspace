@@ -12,7 +12,6 @@ import canvas2d
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
-    canvas.set_pen_color(color)
     canvas.filled_circle(500, 200, 200)
 
 
