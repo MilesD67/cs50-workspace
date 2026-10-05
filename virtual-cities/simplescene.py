@@ -34,7 +34,7 @@ def draw_tree(scene, cx, cz, height):
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 255, 255, 0)
 
     # TODO: draw a green ellipsoid for the leaves
-    scene.add_ellipsoid(0, 5, -10, 1, 2, 1, 255, 0, 0)
+    scene.add_ellipsoid(0, , -10, 1, 2, 1, 255, 0, 0)
     pass
 
 # Task 2 and beyond: define your own functions!
