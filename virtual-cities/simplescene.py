@@ -31,10 +31,10 @@ def main():
 # Task 1: finish this function (delete "pass" once you add your code)
 def draw_tree(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
-    scene.add_cylinder(cx, height/2, cz, 0.5, height, 50, 50, 0)
+    scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
     # TODO: draw a green ellipsoid for the leaves
-    scene.add_ellipsoid(cx, height, cz, 1, 2, 1, 255, 0, 0)
+    scene.add_ellipsoid(cx, height, cz, 1, 2, 1, 0, 255, 0)
     pass
 
 # Task 2 and beyond: define your own functions!
