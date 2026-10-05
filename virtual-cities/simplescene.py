@@ -20,8 +20,8 @@ def main():
     simple_snowman(scene, 5, -8)
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    draw_tree(scene, -5, -10, 20)
-    draw_tree(scene, 5, 100, 25)
+    draw_tree(scene, -5, -10, 10)
+    draw_tree(scene, 5, 100, 10)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
@@ -31,7 +31,7 @@ def main():
 # Task 1: finish this function (delete "pass" once you add your code)
 def draw_tree(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
-    scene.add_cylinder(0, 1, -2, 0.5, height, 255, 255, 0)
+    scene.add_cylinder(0, height/2, -2, 0.5, height, 255, 255, 0)
 
     # TODO: draw a green ellipsoid for the leaves
     scene.add_ellipsoid(0, 5, -10, 1, 2, 1, 255, 0, 0)
