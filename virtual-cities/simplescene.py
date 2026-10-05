@@ -25,6 +25,7 @@ def main():
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
+
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
 # Task 1: finish this function (delete "pass" once you add your code)
