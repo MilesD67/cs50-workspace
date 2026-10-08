@@ -32,6 +32,7 @@ def main():
 def draw_tree(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
+    
 
     # TODO: draw a green ellipsoid for the leaves
     scene.add_ellipsoid(cx, height, cz, 1, 2, 1, 0, 255, 0)
