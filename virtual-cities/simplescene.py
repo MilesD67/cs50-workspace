@@ -21,6 +21,7 @@ def main():
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
     draw_tree(scene, 0, -10, 10)
+    draw_tree(scene, 0, -30, 30)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
@@ -32,7 +33,7 @@ def main():
 def draw_tree(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
-    
+
 
     # TODO: draw a green ellipsoid for the leaves
     scene.add_ellipsoid(cx, height, cz, 1, 2, 1, 0, 255, 0)
