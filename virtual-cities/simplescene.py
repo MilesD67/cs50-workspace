@@ -48,7 +48,7 @@ def draw_tree(scene, cx, cz, height):
 # Task 2 and beyond: define your own functions!
 
 def draw_fire_hydrant(scene, cx, cz):
-    scene.add_cylinder(cx, 0.5, cz, 1, 2, 1, 225, 0, 0)
+    scene.add_cylinder(cx, 0.5, cz, 1, 2, 1, 255, 0, 0)
 
 
 # All functions need "scene" as the first parameter
