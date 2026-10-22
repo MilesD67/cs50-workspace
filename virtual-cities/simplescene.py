@@ -45,7 +45,8 @@ def draw_tree(scene, cx, cz, height):
 
 # Task 2 and beyond: define your own functions!
 
-
+def draw_firehydrant(scene, cx, cz, height):
+    scene.add_cylinder(cx, height, cz, 1, height, 110, 55, 0)
 
 
 
