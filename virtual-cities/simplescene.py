@@ -27,6 +27,7 @@ def main():
     draw_tree(scene, 30, -18, 10)
     draw_tree(scene, 40, -20, 10)
 
+draw_firehydrant(scene, 40, -25, 15)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
