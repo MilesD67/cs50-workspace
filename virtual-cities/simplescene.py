@@ -27,7 +27,7 @@ def main():
     draw_tree(scene, 30, -18, 10)
     draw_tree(scene, 40, -20, 10)
 
-    draw_fire_hydrant(scene, 60, -25, 10)
+    draw_fire_hydrant(scene, 60, -25)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
@@ -48,7 +48,7 @@ def draw_tree(scene, cx, cz, height):
 # Task 2 and beyond: define your own functions!
 
 def draw_fire_hydrant(scene, cx, cz):
-    scene.add_cylinder(cx, height, cz, 1, height, 105, 55, 0)
+    scene.add_cylinder(cx, cz, 1, 105, 55, 0)
 
 
 # All functions need "scene" as the first parameter
