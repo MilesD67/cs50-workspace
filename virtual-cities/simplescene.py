@@ -30,7 +30,6 @@ def main():
     draw_fire_hydrant(scene, 10, -10)
 
     draw_stop_light(scene, 14, -9)
-    draw_stop_light(scene, 16, -10)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
@@ -59,7 +58,7 @@ def draw_fire_hydrant(scene, cx, cz):
 
 def draw_stop_light(scene, cx, cz):
     scene.add_cylinder(cx, 4, cz, 0.25, 8, 128, 128, 128)
-    scene.add_cylinder(cx, 8, cz, 0.25, 5, 128, 128, 128)
+    scene.add_cylinder(cx, 1, cz, 0.5, 5, 128, 128, 128)
 
 
 # All functions need "scene" as the first parameter
