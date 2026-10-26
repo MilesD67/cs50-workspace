@@ -67,7 +67,7 @@ def draw_stop_light(scene, cx, cz):
     scene.add_sphere(cx-4.5, 6.3, cz, 0.3, 0, 255, 0)
 
 def draw_sedan(scene, cx, cz, r, g, b, ry=0):
-    scene.add_box(cx, 1, cz, 1, 1, 1, 255, 0, 0)
+    scene.add_box(1, 4, -4, 5, 2, 3, 255, 0, 0)
 
 
 # All functions need "scene" as the first parameter
