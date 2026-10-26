@@ -31,7 +31,7 @@ def main():
 
     draw_stop_light(scene, 14, -9)
 
-    draw_sedan(scene, cx, cz, 255, 0, 0, ry=90)
+    draw_sedan(scene, 8, -10, 255, 0, 0, ry=90)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
