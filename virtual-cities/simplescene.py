@@ -60,9 +60,9 @@ def draw_stop_light(scene, cx, cz):
     scene.add_cylinder(cx, 4, cz, 0.25, 8, 128, 128, 128)
     scene.add_box(cx-2.5, 8, cz, 5, 0.25, 0.5, 128, 128, 128)
     scene.add_box(cx-4.5, 7, cz, 0.75, 2, 0.25, 128, 128, 128)
-    scene.add_sphere(cx-4.5, 7.5, cz, 0.35, 255, 0, 0)
-    scene.add_sphere(cx-4.5, 6.7, cz, 0.35, 0, 255, 0)
-    scene.add_sphere(cx-4.5, 5.9, cz, 0.35, 0, 255, 0)
+    scene.add_sphere(cx-4.5, 7.5, cz, 0.3, 255, 0, 0)
+    scene.add_sphere(cx-4.5, 6.9, cz, 0.3, 255, 255, 0)
+    scene.add_sphere(cx-4.5, 6.3, cz, 0.3, 0, 255, 0)
 
 
 
