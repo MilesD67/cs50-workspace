@@ -58,7 +58,7 @@ def draw_fire_hydrant(scene, cx, cz):
 
 def draw_stop_light(scene, cx, cz):
     scene.add_cylinder(cx, 4, cz, 0.25, 8, 128, 128, 128)
-    scene.add_box(2.5, 8, cz, 0.5, 0.25, 5, 128, 128, 128)
+    scene.add_box(cx, 8, cz, 0.5, 0.25, 5, 128, 128, 128)
 
 
 # All functions need "scene" as the first parameter
