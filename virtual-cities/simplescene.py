@@ -50,6 +50,7 @@ def draw_tree(scene, cx, cz, height):
 def draw_fire_hydrant(scene, cx, cz):
     scene.add_cylinder(cx, 0.1, cz, 0.4, 0.25, 255, 0, 0)
     scene.add_cylinder(cx, 0.5, cz, 0.25, 2, 255, 0, 0)
+    scene.add_
 
 
 # All functions need "scene" as the first parameter
