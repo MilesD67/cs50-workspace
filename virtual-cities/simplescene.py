@@ -31,7 +31,7 @@ def main():
 
     draw_stop_light(scene, 14, -9)
 
-    draw_sedan(scene, 10, 4, 255, 0, 0, ry=0)
+    draw_sedan(scene, 10, 4, 255, 0, 0, ry=90)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
@@ -66,6 +66,8 @@ def draw_stop_light(scene, cx, cz):
     scene.add_sphere(cx-4.5, 6.9, cz, 0.3, 255, 255, 0)
     scene.add_sphere(cx-4.5, 6.3, cz, 0.3, 0, 255, 0)
 
+def draw_sedan(scene, cx, cz):
+    scene.aadd_box(cx, cy, cz, xlen, ylen, zlen, 255, 0, 0)
 
 
 # All functions need "scene" as the first parameter
