@@ -68,7 +68,8 @@ def draw_stop_light(scene, cx, cz):
 
 def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     scene.add_box(1, 4, -4, 5, 2, 3, 255, 0, 0)
-    scene.add_cylinder(1, 4, -4, 2, 4, 244, 0, 0, rx=90)
+    scene.add_cylinder(-0.5, 2.5, -4, 0.5, 2, 128, 128, 128, rx=90)
+    scene.add_cylinder(2.5, 2.5, -4, 0.5, 4, 128, 128, 128, rx=90)
 
 
 # All functions need "scene" as the first parameter
