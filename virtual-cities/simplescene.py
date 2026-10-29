@@ -71,8 +71,10 @@ def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     scene.add_cylinder(-0.5, 2.85, -4, 0.5, 4, 128, 128, 128, rx=90)
     scene.add_cylinder(2.5, 2.85, -4, 0.5, 4, 128, 128, 128, rx=90)
     scene.add_cylinder(1, 4.5, -4, 1.5, 3, 255, 0, 0, rx=90)
-    scene.add_box(-1, 4, -3.5, 2, 0.5, 0.6, 255, 255, 0)
-
+    scene.add_box(-0.75, 4.3, -3, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_box(-0.75, 4.3, -5, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_box(2.75, 3.5, -5, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_box(2.75, 3.5, -3, 2, 0.5, 0.6, 255, 255, 0)
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
