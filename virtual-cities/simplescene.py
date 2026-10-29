@@ -33,7 +33,7 @@ def main():
 
     draw_sedan(scene, 8, -10, 255, 0, 0, ry=90)
 
-    draw_city_block(scene, 10, -10, 255, 192, 203)
+    draw_city_block(scene, 10, -2)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
@@ -78,7 +78,7 @@ def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     scene.add_box(2.75, 1.5, -5, 2, 0.5, 0.6, 255, 255, 0)
     scene.add_box(2.75, 1.5, -3, 2, 0.5, 0.6, 255, 255, 0)
 
-def draw_city_block(scene, cx, cz)
+def draw_city_block(scene, cx, cz):
     scene.add_box(cx, 10, 10, 10, 10, 10, 255, 192, 203)
 
 # All functions need "scene" as the first parameter
