@@ -33,6 +33,8 @@ def main():
 
     draw_sedan(scene, 8, -10, 255, 0, 0, ry=90)
 
+    draw_city_block(scene, 10, -10, 2)
+
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
@@ -75,6 +77,8 @@ def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     scene.add_box(-0.75, 2.3, -5, 2, 0.5, 0.6, 255, 255, 0)
     scene.add_box(2.75, 1.5, -5, 2, 0.5, 0.6, 255, 255, 0)
     scene.add_box(2.75, 1.5, -3, 2, 0.5, 0.6, 255, 255, 0)
+
+def draw_city_block(scene, cx, cz)
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
