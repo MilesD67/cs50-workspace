@@ -71,13 +71,13 @@ def draw_stop_light(scene, cx, cz):
 
 def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     scene.add_box(cx, 2, cz, 5, 1.75, 3, 255, 0, 0)
-    scene.add_cylinder(-0.5, 0.85, -4, 0.5, 4, 128, 128, 128, rx=90)
-    scene.add_cylinder(2.5, 0.85, -4, 0.5, 4, 128, 128, 128, rx=90)
-    scene.add_cylinder(1, 2.5, -4, 1.5, 3, 255, 0, 0, rx=90)
-    scene.add_box(-0.75, 2.3, -3, 2, 0.5, 0.6, 255, 255, 0)
-    scene.add_box(-0.75, 2.3, -5, 2, 0.5, 0.6, 255, 255, 0)
-    scene.add_box(2.75, 1.5, -5, 2, 0.5, 0.6, 255, 255, 0)
-    scene.add_box(2.75, 1.5, -3, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_cylinder(cx-0.5, 0.85, cz-4, 0.5, 4, 128, 128, 128, rx=90)
+    scene.add_cylinder(cx+2.5, 0.85, cz-4, 0.5, 4, 128, 128, 128, rx=90)
+    scene.add_cylinder(cx+1, 2.5, cz-4, 1.5, 3, 255, 0, 0, rx=90)
+    scene.add_box(cx-0.75, 2.3, cz-3, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_box(cx-0.75, 2.3, cz-5, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_box(cx+2.75, 1.5, cz-5, 2, 0.5, 0.6, 255, 255, 0)
+    scene.add_box(cx+2.75, 1.5, cz-3, 2, 0.5, 0.6, 255, 255, 0)
 
 def draw_city_block(scene, cx, cz):
     scene.add_box(cx, 5, 10, 10, 30, 10, 255, 192, 203)
