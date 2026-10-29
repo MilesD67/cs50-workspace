@@ -29,9 +29,8 @@ def main():
 
     draw_stop_light(scene, 14, -9)
 
-    draw_sedan(scene, 8, -5, 255, 0, 0, rx=90)
-    draw_sedan(scene, 15, -15, 255, 0, 0, rx=270)
-
+    draw_sedan(scene, 8, -5, 255, 0, 0, ry=90)
+    draw_sedan(scene, 15, -15, 255, 0, 0, ry=90)
 
     draw_city_block(scene, 10, -10)
 
