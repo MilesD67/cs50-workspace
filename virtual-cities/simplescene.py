@@ -15,9 +15,7 @@ def main():
     add_ground(scene)
 
     # Draw three snowmen in different places
-    simple_snowman(scene, -4, -8)
-    simple_snowman(scene, 0, -8)
-    simple_snowman(scene, 5, -8)
+
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
     draw_tree(scene, -10, -10, 10)
@@ -84,13 +82,7 @@ def draw_city_block(scene, cx, cz):
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
-def simple_snowman(scene, cx, cz):
-    # Big white bottom ball (radius 1, so its center is 1 above the ground)
-    scene.add_sphere(cx, 1, cz, 1, 255, 255, 255)
-    # Smaller white ball on top (radius 0.7), resting on the bottom ball
-    scene.add_sphere(cx, 2.5, cz, 0.7, 255, 255, 255)
-    # Black box for a hat, sitting on top of the head
-    scene.add_box(cx, 3.4, cz, 0.7, 0.4, 0.7, 0, 0, 0)
+
 
 
 def setup_lights(scene):
