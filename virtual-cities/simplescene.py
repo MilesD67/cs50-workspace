@@ -79,6 +79,7 @@ def draw_sedan(scene, cx, cz, r, g, b, ry=0):
 
 def draw_city_block(scene, cx, cz):
     scene.add_box(cx, 5, 10, 10, 30, 10, 255, 192, 203)
+    draw_tree(scene, 40, -20, 10)
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
