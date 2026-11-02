@@ -80,6 +80,11 @@ def draw_sedan(scene, cx, cz, r, g, b, ry=0):
 def draw_city_block(scene, cx, cz):
     scene.add_box(cx, 5, 10, 10, 30, 10, 255, 192, 203)
     draw_tree(scene, cx-40, cz-20, 10)
+    draw_tree(scene, cx-30, cz-18, 10)
+    draw_fire_hydrant(scene, cx-10, cz-10)
+    draw_stop_light(scene, cx-14, cz-9)
+    draw_sedan(scene, cx-8, cz-5, 255, 0, 0, ry=90)
+    draw_sedan(scene, cx-15, cz-15, 255, 0, 0, ry=90)
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
