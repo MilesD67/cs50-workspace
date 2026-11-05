@@ -105,8 +105,8 @@ def add_ground(scene):
     # Add a large gray box for the ground
     scene.add_box(0, -25, 0, 1000, 50, 1000, 0, 100, 0)
     scene.add_box(0, 500, 0, 1000, 100, 1000, 0, 0, 255)
-    scene.add_box(0, 500, 0, 1000, 100, 1000, 0, 0, 255)
-    
+    scene.add_box(0, -25, 500, 1000, 100, 1000, 0, 0, 255)
+
 
 def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
