@@ -25,17 +25,6 @@ def main():
     draw_tree(scene, 30, -18, 10)
     draw_tree(scene, 40, -20, 10)
 
-    draw_fire_hydrant(scene, 10, -10)
-
-    draw_stop_light(scene, 14, -9)
-
-    draw_sedan(scene, 8, -5, 255, 0, 0, ry=90)
-    draw_sedan(scene, 15, -15, 255, 0, 0, ry=90)
-
-    draw_city_block(scene, 10, -10)
-
-    # Draw a cyan cow and a smokestack with "meshes"
-    add_meshes(scene)
 
 
     scene.save_scene("myscene.html", "Nightwing Kingdom")
@@ -52,39 +41,6 @@ def draw_tree(scene, cx, cz, height):
 
 # Task 2 and beyond: define your own functions!
 
-def draw_fire_hydrant(scene, cx, cz):
-    scene.add_cylinder(cx, 0.1, cz, 0.4, 0.25, 255, 0, 0)
-    scene.add_cylinder(cx, 0.5, cz, 0.25, 2, 255, 0, 0)
-    scene.add_sphere(cx, 1.5, cz, 0.25, 255, 0, 0)
-    scene.add_box(cx, 1, cz, 1, 0.5, 0.25, 255, 0, 0)
-    scene.add_box(cx, 1, cz, 0.25, 0.5, 1, 255, 0, 0)
-
-def draw_stop_light(scene, cx, cz):
-    scene.add_cylinder(cx, 4, cz, 0.25, 8, 128, 128, 128)
-    scene.add_box(cx-2.5, 8, cz, 5, 0.25, 0.5, 128, 128, 128)
-    scene.add_box(cx-4.5, 7, cz, 0.75, 2, 0.25, 128, 128, 128)
-    scene.add_sphere(cx-4.5, 7.5, cz, 0.3, 255, 0, 0)
-    scene.add_sphere(cx-4.5, 6.9, cz, 0.3, 255, 255, 0)
-    scene.add_sphere(cx-4.5, 6.3, cz, 0.3, 0, 255, 0)
-
-def draw_sedan(scene, cx, cz, r, g, b, ry=0):
-    scene.add_box(cx+1, 2, cz-4, 5, 1.75, 3, 255, 0, 0)
-    scene.add_cylinder(cx-0.5, 0.85, cz-4, 0.5, 4, 128, 128, 128, rx=90)
-    scene.add_cylinder(cx+2.5, 0.85, cz-4, 0.5, 4, 128, 128, 128, rx=90)
-    scene.add_cylinder(cx+1, 2.5, cz-4, 1.5, 3, 255, 0, 0, rx=90)
-    scene.add_box(cx-0.75, 2.3, cz-3, 2, 0.5, 0.6, 255, 255, 0)
-    scene.add_box(cx-0.75, 2.3, cz-5, 2, 0.5, 0.6, 255, 255, 0)
-    scene.add_box(cx+2.75, 1.5, cz-5, 2, 0.5, 0.6, 255, 255, 0)
-    scene.add_box(cx+2.75, 1.5, cz-3, 2, 0.5, 0.6, 255, 255, 0)
-
-def draw_city_block(scene, cx, cz):
-    scene.add_box(cx, +5, +10, +10, 30, 10, 255, 192, 203)
-    draw_tree(scene, cx+40, cz+20, 10)
-    draw_tree(scene, cx+30, cz+18, 10)
-    draw_fire_hydrant(scene, cx+10, cz+10)
-    draw_stop_light(scene, cx+14, cz+9)
-    draw_sedan(scene, cx-8, cz-5, 255, 0, 0, ry=0)
-    draw_sedan(scene, cx, cz+15, 255, 0, 0, ry=0)
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
