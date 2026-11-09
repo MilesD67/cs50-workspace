@@ -25,7 +25,7 @@ def main():
     draw_tree(scene, 30, -18, 10)
     draw_tree(scene, 40, -20, 10)
 
-    draw_cone(scene, 20, -20, 10)
+    draw_mountains(scene, 20, -20, 10)
 
 
 
