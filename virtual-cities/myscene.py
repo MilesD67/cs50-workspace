@@ -59,8 +59,8 @@ def setup_cameras(scene):
 
 def add_ground(scene):
     # Add a large gray box for the ground
-    scene.add_box(0, -25, 0, 1000, 50, 1000, 0, 100, 0)
-    scene.add_box(0, 0, 0, 1000, 10, 1000, 4, 4, 38)
+    scene.add_box(0, -200, 0, 1000, 50, 1000, 0, 100, 0) #floor
+    scene.add_box(0, 500, 0, 1000, 10, 1000, 4, 4, 38) #celing
     scene.add_box(0, 250, 500, 1000, 500, 10, 4, 4, 38)
     scene.add_box(0, -25, -500, 1000, 1050, 10, 4, 4, 38)
     scene.add_box(500, -25, 0, 10, 1050, 2000, 4, 4, 38)
