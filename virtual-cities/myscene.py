@@ -38,7 +38,7 @@ def main():
     add_meshes(scene)
 
 
-    scene.save_scene("simplescene.html", "Simple Sample Scene")
+    scene.save_scene("myscene.html", "Nightwing Kingdom")
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def draw_tree(scene, cx, cz, height):
