@@ -110,6 +110,9 @@ def add_ground(scene):
     scene.add_box(500, -25, 0, 10, 1050, 2000, 4, 4, 38)
     scene.add_box(-500, -25, 0, 10, 1050, 2000, 4, 4, 38)
 
+def add_mountains(scene):
+    scene.add_cone(4, 0, 0, 0.5, 6, 0, 0, 255)
+
 def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
     scene.add_textured_mesh("meshes/smokestack/medres.obj", "meshes/smokestack/medres.mtl",
