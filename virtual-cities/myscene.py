@@ -25,6 +25,8 @@ def main():
     draw_tree(scene, 30, -18, 10)
     draw_tree(scene, 40, -20, 10)
 
+    draw_cone(scene, 20, -20, 10)
+
 
 
     scene.save_scene("myscene.html", "Nightwing Kingdom")
@@ -45,8 +47,6 @@ def draw_tree(scene, cx, cz, height):
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
 
-
-
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
     scene.add_point_light(100, 200, 0, 200, 200, 200, 1.0)
@@ -66,8 +66,8 @@ def add_ground(scene):
     scene.add_box(500, -25, 0, 10, 1050, 2000, 4, 4, 38)
     scene.add_box(-500, -25, 0, 10, 1050, 2000, 4, 4, 38)
 
-def add_mountains(scene):
-    scene.add_cone(4, 0, 0, 0.5, 6, 0, 0, 255)
+def add_mountains(scene, cx, cz, height):
+    scene.add_cone(4, 0, 0, 20, 26, 0, 0, 255)
 
 def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
