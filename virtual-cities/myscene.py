@@ -67,7 +67,7 @@ def add_ground(scene):
     scene.add_box(-500, -25, 0, 10, 1050, 2000, 4, 4, 38)
 
 def add_mountains(scene, cx, cz, height):
-    scene.add_cone(4, 0, 0, 50, 100, 0, 0, 255)
+    scene.add_cone(350, 0, 0, 300, 500, 0, 0, 255)
 
 def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
