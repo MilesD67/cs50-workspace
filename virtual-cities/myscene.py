@@ -25,7 +25,19 @@ def main():
     draw_tree(scene, 30, -18, 10)
     draw_tree(scene, 40, -20, 10)
 
-    add_mountains(scene, 20, -20, 0)
+    add_mountains(scene, 450, 0, 0)
+    add_mountains(scene, 400, 100, 0)
+    add_mountains(scene, 425, 200, 0)
+    add_mountains(scene, 450, 0, 0)
+    add_mountains(scene, 400, 100, 0)
+    add_mountains(scene, 425, 200, 0)
+
+    add_mountains(scene, -450, 0, 0)
+    add_mountains(scene, -400, 100, 0)
+    add_mountains(scene, -425, 200, 0)
+    add_mountains(scene, -450, 0, 0)
+    add_mountains(scene, -400, 100, 0)
+    add_mountains(scene, -425, 200, 0)
 
 
 
@@ -67,19 +79,19 @@ def add_ground(scene):
     scene.add_box(-500, -25, 0, 10, 1050, 2000, 4, 4, 38) #wall 4
 
 def add_mountains(scene, cx, cz, height):
-    scene.add_cone(450, 150, 0, 100, 300, 30, 30, 30) #mountain 1
-    scene.add_cone(400, 100, 100, 100, 200, 30, 30, 30) #mountain 2
-    scene.add_cone(425, 125, 200, 100, 250, 30, 30, 30) #mountain 3
-    scene.add_cone(450, 270, 0, 25, 100, 255, 255, 255) #mountain 1 snow top
-    scene.add_cone(400, 175, 100, 35, 100, 255, 255, 255) #mountain 2 snow top
-    scene.add_cone(425, 200, 200, 40, 125, 255, 255, 255) #mountain 3 snow top
+    scene.add_cone(cx, 150, cz, 100, 300, 30, 30, 30) #mountain 1
+    scene.add_cone(cx, 100, cz, 100, 200, 30, 30, 30) #mountain 2
+    scene.add_cone(cx, 125, cz, 100, 250, 30, 30, 30) #mountain 3
+    scene.add_cone(cx, 270, cz, 25, 100, 255, 255, 255) #mountain 1 snow top
+    scene.add_cone(cx, 175, cz, 35, 100, 255, 255, 255) #mountain 2 snow top
+    scene.add_cone(cx, 200, cz, 40, 125, 255, 255, 255) #mountain 3 snow top
 
-   scene.add_cone(-450, 150, 0, 100, 300, 30, 30, 30) #mountain 1
-    scene.add_cone(-400, 100, 100, 100, 200, 30, 30, 30) #mountain 2
-    scene.add_cone(-425, 125, 200, 100, 250, 30, 30, 30) #mountain 3
-    scene.add_cone(-450, 270, 0, 25, 100, 255, 255, 255) #mountain 1 snow top
-    scene.add_cone(-400, 175, 100, 35, 100, 255, 255, 255) #mountain 2 snow top
-    scene.add_cone(-425, 200, 200, 40, 125, 255, 255, 255) #mountain 3 snow top
+   scene.add_cone(cx, 150, cz, 100, 300, 30, 30, 30) #mountain 1
+    scene.add_cone(cx, 100, cz, 100, 200, 30, 30, 30) #mountain 2
+    scene.add_cone(cx, 125, cz, 100, 250, 30, 30, 30) #mountain 3
+    scene.add_cone(cx, 270, cz, 25, 100, 255, 255, 255) #mountain 1 snow top
+    scene.add_cone(cx, 175, cz, 35, 100, 255, 255, 255) #mountain 2 snow top
+    scene.add_cone(cx, 200, cz, 40, 125, 255, 255, 255) #mountain 3 snow top
 
 def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
