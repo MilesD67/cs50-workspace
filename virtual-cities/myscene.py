@@ -27,7 +27,7 @@ def main():
 
     add_mountainrange(scene, 450, 0, 0) #mountainrange 1
     add_mountainrange(scene, -450, 100, 0) #mountainrange 2
-    add_mountainrange(scene, 400, 150, 250, ry=180) #mountainrange 3
+    add_mountainrange(scene, 400, 350, 250, ry=180) #mountainrange 3
     add_mountainrange(scene, 400, -450, 0, ry=90) #mountainrange 4
     # add_mountains(scene, 400, 100, 0) #mountainrange 5
     # add_mountains(scene, 425, 200, 0) #mountainrange 6
