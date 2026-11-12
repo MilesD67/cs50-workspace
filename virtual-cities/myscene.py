@@ -86,6 +86,7 @@ def add_ground(scene):
     scene.add_box(-500, -25, 0, 10, 1050, 2000, 4, 4, 38) #wall 4
 
 def add_mountainrange(scene, cx, cz, height):
+     group = scene.add_group(cx, 0, cz, 0, ry, 0)
     scene.add_cone(cx, 150, cz, 100, 300, 30, 30, 30) #mountain 1
     scene.add_cone(cx, 100, cz-125, 100, 200, 30, 30, 30) #mountain 2
     scene.add_cone(cx, 125, cz-220, 100, 250, 30, 30, 30) #mountain 3
