@@ -87,12 +87,12 @@ def add_ground(scene):
 
 def add_mountainrange(scene, cx, cz, height):
      group = scene.add_group(cx, 0, cz, 0, ry, 0)
-    group.add_cone(cx, 150, cz, 100, 300, 30, 30, 30) #mountain 1
-    group.add_cone(cx, 100, cz-125, 100, 200, 30, 30, 30) #mountain 2
-    group.add_cone(cx, 125, cz-220, 100, 250, 30, 30, 30) #mountain 3
-    group.add_cone(cx, 270, cz, 25, 100, 255, 255, 255) #mountain 1 snow top
-    group.add_cone(cx, 175, cz-125, 35, 100, 255, 255, 255) #mountain 2 snow top
-    group.add_cone(cx, 200, cz-220, 40, 125, 255, 255, 255) #mountain 3 snow top
+    group.add_cone(0, 150, cz, 100, 300, 30, 30, 30) #mountain 1
+    group.add_cone(0, 100, cz-125, 100, 200, 30, 30, 30) #mountain 2
+    group.add_cone(0, 125, cz-220, 100, 250, 30, 30, 30) #mountain 3
+    group.add_cone(0, 270, cz, 25, 100, 255, 255, 255) #mountain 1 snow top
+    group.add_cone(0, 175, cz-125, 35, 100, 255, 255, 255) #mountain 2 snow top
+    group.add_cone(0, 200, cz-220, 40, 125, 255, 255, 255) #mountain 3 snow top
 
 
 def add_meshes(scene):
