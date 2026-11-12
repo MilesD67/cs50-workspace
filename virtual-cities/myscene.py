@@ -67,7 +67,7 @@ def add_ground(scene):
     scene.add_box(-500, -25, 0, 10, 1050, 2000, 4, 4, 38) #wall 4
 
 def add_mountains(scene, cx, cz, height):
-    scene.add_cone(450, 150, 0, 100, 300, 30, 30, 30) #mountain 1
+    scene.add_cone(cx, 150, cz, 100, 300, 30, 30, 30) #mountain 1
     scene.add_cone(400, 100, 100, 100, 200, 30, 30, 30) #mountain 2
     scene.add_cone(425, 125, 200, 100, 250, 30, 30, 30) #mountain 3
     scene.add_cone(450, 270, 0, 25, 100, 255, 255, 255) #mountain 1 snow top
