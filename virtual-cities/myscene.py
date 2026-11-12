@@ -39,6 +39,13 @@ def main():
     add_mountains(scene, -400, 100, 0) #mountain 5 snow top
     add_mountains(scene, -425, 200, 0) #mountain 6 snow top
 
+    add_mountains(scene, 0, 0, -450) #mountain 4
+    add_mountains(scene, 0, 100, -400) #mountain 5
+    add_mountains(scene, 0, 200, -425) #mountain 6
+    add_mountains(scene, 0, 0, -450) #mountain 4 snow top
+    add_mountains(scene, 0, 100, -400) #mountain 5 snow top
+    add_mountains(scene, 0, 200, -425) #mountain 6 snow top
+
 
 
     scene.save_scene("myscene.html", "Nightwing Kingdom")
@@ -92,6 +99,13 @@ def add_mountains(scene, cx, cz, height):
     scene.add_cone(cx, 270, cz, 25, 100, 255, 255, 255) #mountain 4 snow top
     scene.add_cone(cx, 175, cz, 35, 100, 255, 255, 255) #mountain 5 snow top
     scene.add_cone(cx, 200, cz, 40, 125, 255, 255, 255) #mountain 6 snow top
+
+    scene.add_cone(cx, 150, cz, 100, 300, 30, 30, 30) #mountain 7
+    scene.add_cone(cx, 100, cz, 100, 200, 30, 30, 30) #mountain 8
+    scene.add_cone(cx, 125, cz, 100, 250, 30, 30, 30) #mountain 9
+    scene.add_cone(cx, 270, cz, 25, 100, 255, 255, 255) #mountain 7 snow top
+    scene.add_cone(cx, 175, cz, 35, 100, 255, 255, 255) #mountain 8 snow top
+    scene.add_cone(cx, 200, cz, 40, 125, 255, 255, 255) #mountain 9 snow top
 
 def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
