@@ -56,7 +56,7 @@ def main():
     scene.save_scene("myscene.html", "Nightwing Kingdom")
 
 # Task 1: finish this function (delete "pass" once you add your code)
-def draw_tree(scene, cx, cz, height):
+def draw_treegroup(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
@@ -109,4 +109,4 @@ def add_meshes(scene):
     scene.add_textured_mesh("meshes/smokestack/medres.obj", "meshes/smokestack/medres.mtl",
                             0, 18, -20, 0, 180, 0, 10, 10, 10, 0)
 
-main()
+
