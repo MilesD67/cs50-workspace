@@ -58,7 +58,7 @@ def main():
 # Task 1: finish this function (delete "pass" once you add your code)
 def draw_treegroup(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
-    group.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
+    scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
     group.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
     group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
