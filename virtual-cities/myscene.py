@@ -18,7 +18,7 @@ def main():
 
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    add_treegroup(scene, -10, -15, 10) #treegroup 1
+    add_treegroup(scene, -10, -30, 10) #treegroup 1
 
 
     add_mountainrange(scene, 450, 0, 0) #mountainrange 1
@@ -55,7 +55,7 @@ def main():
 def add_treegroup(scene, cx, cz, height, ry=0):
     # TODO: draw a brown cylinder for the trunk
 
-    group = scene.add_group(cx, 0, cz, 0, ry, 0)
+    group = scene.add_group(0, 0, 0, 0, ry, 0)
     group.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
     group.add_cone(0, 7, cz-10, 3, 10, 0, 50, 0)
