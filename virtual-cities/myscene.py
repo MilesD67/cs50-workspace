@@ -56,24 +56,13 @@ def main():
     scene.save_scene("myscene.html", "Nightwing Kingdom")
 
 # Task 1: finish this function (delete "pass" once you add your code)
-def draw_treegroup(scene, cx, cz, height):
+def draw_tree(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
-    group = scene.add_group (cx, 0, cz=0, 0, ry=0, 0)
-
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
-    group.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
-    group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
-    group.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
-
-    def draw_tree(scene, cx, cz, height, rx=0, rz=0):
-    # Create a group positioned at the tree's base, with rotation applied
-    group = scene.add_group(cx, 0, cz, rx, 0, rz)
-
-    # Add objects to the group (they rotate together)
-    # x, y, z coords are relative to the group's center position
-    group.add_cylinder(0, height/2, 0, 0.3, height, 102, 51, 0)
-    group.add_ellipsoid(0, height, 0, 1, 1, 1, 0, 255, 0)
+    scene.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
+    scene.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
+    scene.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
 
 
 
