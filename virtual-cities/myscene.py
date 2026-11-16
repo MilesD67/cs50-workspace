@@ -66,16 +66,8 @@ def draw_treegroup(scene, cx, cz, height):
     group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
     group.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
 
-def draw_treegroup(scene, cx, cz, height, rx=0, rz=0):
+    
 
-    group = scene.add_group(cx, 0, cz, rx, 0, rz)
-
-
-    scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
-
-    group.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
-    group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
-    group.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
 
 
     # TODO: draw a green ellipsoid for the leaves
