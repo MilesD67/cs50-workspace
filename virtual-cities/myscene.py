@@ -18,7 +18,7 @@ def main():
 
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    draw_treegroup(scene, -10, -15, 10) #treegroup 1
+    add_treegroup(scene, -10, -15, 10) #treegroup 1
 
 
     add_mountainrange(scene, 450, 0, 0) #mountainrange 1
@@ -52,7 +52,7 @@ def main():
     scene.save_scene("myscene.html", "Nightwing Kingdom")
 
 # Task 1: finish this function (delete "pass" once you add your code)
-def draw_treegroup(scene, cx, cz, height, ry=0):
+def add_treegroup(scene, cx, cz, height, ry=0):
     # TODO: draw a brown cylinder for the trunk
 
     group = scene.add_group(cx, 0, cz, 0, ry, 0)
