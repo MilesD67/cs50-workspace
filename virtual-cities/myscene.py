@@ -55,7 +55,7 @@ def main():
 def draw_treegroup(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
 
-    group = scene.add_group(cx, 0, cz, rx, 0, rz)
+    group = scene.add_group(cx, 0, cz, 0, ry, 0)
     group.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
     group.add_cone(0, 7, cz-10, 3, 10, 0, 50, 0)
