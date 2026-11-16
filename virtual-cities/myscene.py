@@ -66,7 +66,14 @@ def draw_treegroup(scene, cx, cz, height):
     group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
     group.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
 
-    
+    def draw_tree(scene, cx, cz, height, rx=0, rz=0):
+    # Create a group positioned at the tree's base, with rotation applied
+    group = scene.add_group(cx, 0, cz, rx, 0, rz)
+
+    # Add objects to the group (they rotate together)
+    # x, y, z coords are relative to the group's center position
+    group.add_cylinder(0, height/2, 0, 0.3, height, 102, 51, 0)
+    group.add_ellipsoid(0, height, 0, 1, 1, 1, 0, 255, 0)
 
 
 
