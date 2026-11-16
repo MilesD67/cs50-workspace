@@ -60,9 +60,10 @@ def draw_tree(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
+    scene.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
+
 
     # TODO: draw a green ellipsoid for the leaves
-    add_cone(cx, cy, cz, radius, height, 0, 255, 0)
     pass
 
 # Task 2 and beyond: define your own functions!
