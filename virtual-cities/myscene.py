@@ -62,7 +62,7 @@ def draw_tree(scene, cx, cz, height):
 
 
     # TODO: draw a green ellipsoid for the leaves
-    scene.add_ellipsoid(cx, height, cz, 1, 2, 1, 0, 255, 0)
+    add_cone(cx, cy, cz, radius, height, r, g, b)
     pass
 
 # Task 2 and beyond: define your own functions!
