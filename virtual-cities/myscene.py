@@ -18,12 +18,12 @@ def main():
 
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    draw_tree(scene, -10, -15, 10)
-    draw_tree(scene, 0, -12, 10)
-    draw_tree(scene, 10, -14, 10)
-    draw_tree(scene, 20, -16, 10)
-    draw_tree(scene, 30, -18, 10)
-    draw_tree(scene, 40, -20, 10)
+    draw_treegroup(scene, -10, -15, 10)
+    draw_treegroup(scene, 0, -19, 10)
+    draw_treegroup(scene, 1, -12, 10)
+    draw_treegroup(scene, 10, -14, 10)
+    draw_treegroup(scene, 5, -23, 10)
+    draw_treegroup(scene, 4, -5, 10)
 
     add_mountainrange(scene, 450, 0, 0) #mountainrange 1
     add_mountainrange(scene, -450, 100, 0, ry=180) #mountainrange 2
@@ -56,13 +56,13 @@ def main():
     scene.save_scene("myscene.html", "Nightwing Kingdom")
 
 # Task 1: finish this function (delete "pass" once you add your code)
-def draw_tree(scene, cx, cz, height):
+def draw_treegroup(scene, cx, cz, height):
     # TODO: draw a brown cylinder for the trunk
-    scene.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
+    group.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
-    scene.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
-    scene.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
-    scene.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
+    group.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
+    group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
+    group.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
 
 
 
