@@ -18,7 +18,9 @@ def main():
 
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    add_treegroup(scene, -10, -30, 10) #treegroup 1
+
+    add_treegroup(scene, -20, -50, 10) #treegroup 1
+    add_treegroup(scene, -50, -20, 10) #treegroup 2
 
 
     add_mountainrange(scene, 450, 0, 0) #mountainrange 1
@@ -56,11 +58,33 @@ def add_treegroup(scene, cx, cz, height, ry=0):
     # TODO: draw a brown cylinder for the trunk
 
     group = scene.add_group(0, 0, 0, 0, ry, 0)
-    group.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0)
 
-    group.add_cone(0, 7, cz-10, 3, 10, 0, 50, 0)
-    group.add_cone(0, 9, cz-10, 2.5, 7, 0, 50, 0)
-    group.add_cone(0, 11.25, cz-10, 2, 7, 0, 50, 0)
+    group.add_cylinder(cx, height/2, cz, 0.5, height, 102, 51, 0) #tree group 1
+    group.add_cone(cx, 7, cz, 3, 10, 0, 50, 0)
+    group.add_cone(cx, 9, cz, 2.5, 7, 0, 50, 0)
+    group.add_cone(cx, 11.25, cz, 2, 7, 0, 50, 0)
+
+    group.add_cylinder(cx-5, height/2, cz-5, 0.5, height, 102, 51, 0) #tree group 2
+    group.add_cone(cx-5, 7, cz-5, 3, 10, 0, 50, 0)
+    group.add_cone(cx-5, 9, cz-5, 2.5, 7, 0, 50, 0)
+    group.add_cone(cx-5, 11.25, cz-5, 2, 7, 0, 50, 0)
+
+    group.add_cylinder(cx+7, height/2, cz-10, 0.5, height, 102, 51, 0) #tree group 3
+    group.add_cone(cx+7, 7, cz-10, 3, 10, 0, 50, 0)
+    group.add_cone(cx+7, 9, cz-10, 2.5, 7, 0, 50, 0)
+    group.add_cone(cx+7, 11.25, cz-10, 2, 7, 0, 50, 0)
+
+    group.add_cylinder(cx+3, height/2, cz-20, 0.5, height, 102, 51, 0) #tree group 4
+    group.add_cone(cx+3, 7, cz-20, 3, 10, 0, 50, 0)
+    group.add_cone(cx+3, 9, cz-20, 2.5, 7, 0, 50, 0)
+    group.add_cone(cx+3, 11.25, cz-20, 2, 7, 0, 50, 0)
+
+    group.add_cylinder(cx-3, height/2, cz-15, 0.5, height, 102, 51, 0) #tree group 5
+    group.add_cone(cx-3, 7, cz-15, 3, 10, 0, 50, 0)
+    group.add_cone(cx-3, 9, cz-15, 2.5, 7, 0, 50, 0)
+    group.add_cone(cx-3, 11.25, cz-15, 2, 7, 0, 50, 0)
+
+
 
 
 
