@@ -19,8 +19,23 @@ def main():
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
 
-    for i in range(100):
-        add_treegroup(scene, -350+20*i, -50, 10, ry=50+2*i) #treegroup 1
+    for i in range(75):
+        add_treegroup(scene, -350+20*i, -50, 10, ry=50+20*i) #treegroup 1
+
+    for i in range(75):
+        add_treegroup(scene, -350+20*i, -75, 10, ry=50+20*i) #treegroup 1
+
+    for i in range(75):
+        add_treegroup(scene, -350+20*i, -100, 10, ry=50+20*i) #treegroup 1
+
+    for i in range(75):
+        add_treegroup(scene, -350+20*i, -125, 10, ry=100+20*i) #treegroup 1
+
+    for i in range(75):
+        add_treegroup(scene, -350+20*i, -150, 10, ry=100+20*i) #treegroup 1
+
+    for i in range(75):
+        add_treegroup(scene, -350+20*i, -175, 10, ry=100+20*i) #treegroup 1
 
 
     add_mountainrange(scene, 450, 0, 0) #mountainrange 1
